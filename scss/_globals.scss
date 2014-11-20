@@ -14,3 +14,78 @@ Globals
     font-size: $size;
     font-size: calculateRem($size);
 }
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(http://fonts.gstatic.com/s/lato/v11/kcf5uOXucLcbFOydGU24WALUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(http://fonts.gstatic.com/s/oswald/v10/qpy-UiLNKP-VfOdbcs6r6-vvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@font-face {
+  font-family: 'Satisfy';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Satisfy'), url(http://fonts.gstatic.com/s/satisfy/v6/tmRzDlQs5wZmOn9mIuLa-QLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 80px;
+    color: #fff;
+}
+
+h2 {
+  font-family: 'satisfy', pacifico, cursive;
+  font-size: 50px;
+  color: #fff;
+}
+
+h3 {
+  font-family: 'satisfy', pacifico, cursive;
+  font-size: 30px;
+  color: #007A7A;
+}
+
+.summary, {
+  font-family: 'lato', open-sans, sans-serif;
+  font-size: 18px;
+    text-align: center;
+}
+
+.preamble, .explanation, .participation, .benefits, .requirements {
+  font-family: 'lato', open-sans, sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: #009999;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  text-decoration: none;
+}
+  a:visited {
+    color: #003d3d;
+  }
+  a:hover, a:focus {
+    color: #99d6d6;
+    text-decoration: none;
+  }
+
+header {
+  height: 270px;
+  padding: 20px 0 70px 0;
+  background: #DBD8D4 50%; 
+  background-attachment: fixed, scroll, scroll, scroll;
+  background-image: url(tealtexture3.jpg);
+  background-position: 0, 0, 0, 0;
+  background-repeat: repeat, repeat, repeat, repeat;
+  background-size: auto;
+  text-align: center;
+}

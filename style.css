@@ -405,21 +405,21 @@ th {
 /* 
 12 Column Mobile First Gird System
 */
-.preamble, .supporting, .benefits, .requirements,
+.preamble, .supporting,
 .row, .row-no-gutter {
   max-width: 1140px;
   margin: 0 auto;
   width: 100%;
 }
 
-.preamble:after, .supporting:after, .benefits:after, .requirements:after,
+.preamble:after, .supporting:after,
 .row:after, .row-no-gutter:after {
   clear: both;
   content: "";
   display: table;
 }
 
-.preamble, .supporting, .benefits, .requirements, .explanation, .participation,
+.preamble, .supporting, .benefits, .requirements, .participation, .explanation
 [class^="col-"] {
   float: right;
   margin-bottom: 14px;
@@ -427,7 +427,7 @@ th {
 }
 
 @media screen and (min-width: 768px) {
-  .preamble, .supporting, .benefits, .requirements,
+  .preamble, .benefits, .requirements, .participation, .explanation
   .row [class^="col-"] {
     margin-left: 7px;
     margin-right: 7px;
@@ -1013,6 +1013,82 @@ nav[role=navigation] li a {
 Globals
 	Sass variable, mixins, plugins, etc. that are used throughout the entore site.
 */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Lato Light"), local("Lato-Light"), url(http://fonts.gstatic.com/s/lato/v11/kcf5uOXucLcbFOydGU24WALUuEpTyoUstqEm5AMlJo4.woff) format("woff");
+}
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Oswald Regular"), local("Oswald-Regular"), url(http://fonts.gstatic.com/s/oswald/v10/qpy-UiLNKP-VfOdbcs6r6-vvDin1pK8aKteLpeZ5c0A.woff) format("woff");
+}
+@font-face {
+  font-family: 'Satisfy';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Satisfy"), url(http://fonts.gstatic.com/s/satisfy/v6/tmRzDlQs5wZmOn9mIuLa-QLUuEpTyoUstqEm5AMlJo4.woff) format("woff");
+}
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 80px;
+  color: #fff;
+}
+
+h2 {
+  font-family: 'satisfy', pacifico, cursive;
+  font-size: 50px;
+  color: #fff;
+}
+
+h3 {
+  font-family: 'satisfy', pacifico, cursive;
+  font-size: 30px;
+  color: #007A7A;
+}
+
+.summary {
+  font-family: 'lato', open-sans, sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.preamble, .explanation, .participation, .benefits, .requirements {
+  font-family: 'lato', open-sans, sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: #009999;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #003d3d;
+}
+
+a:hover, a:focus {
+  color: #99d6d6;
+  text-decoration: none;
+}
+
+header {
+  height: 270px;
+  padding: 20px 0 70px 0;
+  background: #DBD8D4 50%;
+  background-attachment: fixed, scroll, scroll, scroll;
+  background-image: url(tealtexture3.jpg);
+  background-position: 0, 0, 0, 0;
+  background-repeat: repeat, repeat, repeat, repeat;
+  -webkit-background-size: auto;
+  background-size: auto;
+  text-align: center;
+}
+
 /* 
 Base Rules
 	A Base rule is applied to an element using an element selector, a descendent selector, or a child selector, along with any pseudoclasses. It doesn’t include any class or ID selectors. It is defining the default styling for how that element should look in all occurrences on the page.
