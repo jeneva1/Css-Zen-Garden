@@ -10,21 +10,21 @@ $gutter: 14px;
 $padding: 6px;
 
 // Common to all grids
-.preamble, .supporting, 
+.preamble, .supporting
 .row, .row-no-gutter {
     max-width: $desktop;
     margin: 0 auto;
     width: 100%;
 }
 
-.preamble:after, .supporting:after, 
+.preamble:after, .supporting:after
 .row:after, .row-no-gutter:after {
     clear: both;
     content: "";
     display: table;
 }
 
-.preamble, .supporting, .benefits, .requirements, .participation, .explanation
+.summary, .preamble, .explanation, .benefits, .requirements, .participation, 
 [class^="col-"] {
     float: right;
     margin-bottom: $gutter;
@@ -32,7 +32,7 @@ $padding: 6px;
 }
 
 // Columns with verticle gutters
-.preamble, .benefits, .requirements, .participation, .explanation
+ 
 .row [class^="col-"],  {
     @media screen and (min-width: $tablet) {
         margin-left: $gutter/2;
@@ -84,7 +84,7 @@ $padding: 6px;
     }
 }
 
-.preamble, .explanation, .participation, .benefits, .requirements,
+.summary, .preamble, .explanation, .participation, .benefits, .requirements,
 .row .col-8 { 
     @media screen and (min-width: $tablet) {
         width: calc(66.6666666% - #{$gutter});
@@ -108,8 +108,7 @@ $padding: 6px;
         width: calc(91.6666666% - #{$gutter});
     }
 }
-
-.summary, 
+ 
 .row .col-12 { 
     @media screen and (min-width: $tablet) {
         width: calc(100% - #{$gutter});

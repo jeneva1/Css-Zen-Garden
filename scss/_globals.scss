@@ -36,26 +36,30 @@ Globals
 
 h1 {
   font-family: 'Oswald', sans-serif;
-  font-size: 80px;
+  font-size: 100px;
     color: #fff;
+    line-height: 60px;
 }
 
 h2 {
   font-family: 'satisfy', pacifico, cursive;
   font-size: 50px;
   color: #fff;
+    line-height: 1px;
 }
 
 h3 {
   font-family: 'satisfy', pacifico, cursive;
   font-size: 30px;
   color: #007A7A;
+    line-height: 40px;
 }
+
 
 .summary, {
   font-family: 'lato', open-sans, sans-serif;
-  font-size: 18px;
-    text-align: center;
+  font-size: 22px;
+    text-align: left;
 }
 
 .preamble, .explanation, .participation, .benefits, .requirements {
@@ -63,8 +67,20 @@ h3 {
   font-size: 16px;
 }
 
+.design-name {
+  font-family: 'lato', open-sans, sans-serif;
+  font-size: 16px;
+  color: #007A7A;
+}
+
+.designer-name {
+  font-family: 'lato', open-sans, sans-serif;
+  font-size: 14px;
+  color: #3cb89e;
+}
+
 a {
-  color: #009999;
+  color: #3cb89e;
   -webkit-transition: all 0.25s ease-out;
   -moz-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
@@ -74,18 +90,19 @@ a {
     color: #003d3d;
   }
   a:hover, a:focus {
-    color: #99d6d6;
+    color: #4ae7c6;
     text-decoration: none;
   }
 
 header {
-  height: 270px;
-  padding: 20px 0 70px 0;
-  background: #DBD8D4 50%; 
-  background-attachment: fixed, scroll, scroll, scroll;
-  background-image: url(tealtexture3.jpg);
-  background-position: 0, 0, 0, 0;
-  background-repeat: repeat, repeat, repeat, repeat;
-  background-size: auto;
-  text-align: center;
+    height: 270px;
+    padding: 20px 0 70px 0;
+    background: #DBD8D4 50%;
+    background-attachment: fixed, scroll, scroll, scroll;
+    background-image: url(bg-banner-teal.png);
+    background-position: 0, 0, 0, 0;
+    background-repeat: repeat, repeat, repeat, repeat;
+    background-size: auto;
+    text-align: center;
 }
+
