@@ -1064,11 +1064,12 @@ h3 {
 .design-selection {
   font-family: 'lato', open-sans, sans-serif;
   font-size: 15px;
+  line-height: 20px;
 }
 
 .design-name {
   font-family: 'lato', open-sans, sans-serif;
-  font-size: 16px;
+  font-size: 19px;
   color: #3cb89e;
 }
 
@@ -1076,7 +1077,7 @@ h3 {
   font-family: 'lato', open-sans, sans-serif;
   font-size: 14px;
   color: #A4A4A4;
-  margin-bottom: 15px;
+  margin-bottom: 19px;
 }
 
 a {
