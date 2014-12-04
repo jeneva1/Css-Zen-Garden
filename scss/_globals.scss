@@ -36,14 +36,16 @@ Globals
 
 h1 {
   font-family: 'Oswald', sans-serif;
-  font-size: 100px;
+    font-size: 100px;
+    @media screen and (max-width: $tablet) {font-size:60px}
     color: #fff;
     line-height: 60px;
-}
+    }
 
 h2 {
   font-family: 'satisfy', pacifico, cursive;
   font-size: 50px;
+  @media screen and (max-width: $tablet) {font-size:40px}
   color: #fff;
   line-height: 1px;
 }
@@ -59,6 +61,7 @@ h3 {
 .summary, {
   font-family: 'lato', open-sans, sans-serif;
   font-size: 22px;
+    @media screen and (max-width: $tablet) {font-size:20px}
     text-align: left;
 }
 
@@ -102,7 +105,7 @@ a {
   }
 
 header {
-    height: 270px;
+    height: 30vh;
     padding: 20px 0 70px 0;
     background: #DBD8D4 50%;
     background-attachment: fixed, scroll, scroll, scroll;
